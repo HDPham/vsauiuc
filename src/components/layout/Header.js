@@ -68,7 +68,7 @@ function Header(props) {
 		<header>
 			<Navbar expand="md" className="fixed-top" style={{opacity: '0'}}>
 
-				<NavbarBrand tag={Link} to="/" className=""><img src="/images/logo_2017_2018.png" alt="Logo" /> <strong className="align-text-top text-white">VSA UIUC</strong></NavbarBrand>
+				<NavbarBrand tag={Link} to="/" className=""><img src={`${process.env.PUBLIC_URL}/images/logo_2017_2018.png`} alt="Logo" /> <strong className="align-text-top text-white">VSA UIUC</strong></NavbarBrand>
 
 				<NavbarToggler onClick={toggle} />
 
