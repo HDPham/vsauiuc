@@ -11,7 +11,7 @@ import Contact from './components/contact/Contact';
 
 function App() {
 	return (
-		<Router>
+		<Router basename={process.env.PUBLIC_URL}>
 			<Route render={(props) => <Header pathname={props.location.pathname}></Header>}></Route>
 			<Route exact path="/" component={Home}></Route>
 			<Route exact path="/about" component={About}></Route>
