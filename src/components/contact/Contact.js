@@ -5,12 +5,12 @@ function Contact() {
 
 	const onSubmit = e => {
 		e.preventDefault();
-		const mail = {
-			firstName: document.getElementById('contactFirstName').value,
-			lastName: document.getElementById('contactLastName').value,
-			email: document.getElementById('contactEmail').value,
-			message: document.getElementById('contactMessage').value
-		}
+		// const mail = {
+		// 	firstName: document.getElementById('contactFirstName').value,
+		// 	lastName: document.getElementById('contactLastName').value,
+		// 	email: document.getElementById('contactEmail').value,
+		// 	message: document.getElementById('contactMessage').value
+		// }
 	};
 
 	return (
