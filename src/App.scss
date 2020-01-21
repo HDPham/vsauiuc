@@ -1,0 +1,166 @@
+$maroon: rgb(176, 0, 0);
+
+/* Global */
+#root {
+	position: relative;
+	min-height: 100vh;
+	padding-bottom: 4rem;
+}
+
+.text-maroon {
+	color: $maroon;
+}
+
+a.text-maroon:hover {
+	color: rgb(144, 0, 0);
+}
+
+.bg-maroon {
+	background-color: $maroon;
+}
+
+button.bg-maroon:hover {
+	background-color: rgb(144, 0, 0);
+}
+
+
+/* Navbar */
+nav {
+	img {
+		height: 2rem;
+	}
+
+	ul li {
+		padding-left: 5px;
+
+		a {
+			border-radius: 5px;
+			border: 3px solid transparent;
+		}
+
+		a.active {
+			border: 3px solid #777777;
+		}
+
+		a:hover {
+			border: 3px solid #777777;
+		}
+	}
+}
+
+
+/* Home */
+#homeBanner {
+	background-image: url("/images/front_page.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+/* About */
+.nav-tabs {
+	a {
+		color: #A9A9A9;
+		cursor: pointer;
+
+		&.active {
+			font-weight: bold;
+		}
+	}
+}
+
+.board-list {
+	list-style-type: none;
+	margin-top: 1rem;
+	padding: 0;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+
+/* Events */
+.event-date {
+	position: absolute;
+	left: 10%;
+	top: -7.5%;
+	width: 3.5rem;
+
+	.event-month {
+		height: 1.5rem;
+		background: #696969;
+		line-height: 1.5rem;
+	}
+
+	.event-day {
+		height: 2.5rem;
+		background: #f4b35b;
+		line-height: 2.5rem;
+		text-align: center;
+		font-size: 2rem;
+		font-weight: bold;
+	}
+}
+
+.event-info {
+	span {
+		margin-left: 0.5rem;
+	}
+	.info-secondary {
+		margin-left: 3rem;
+	}
+}
+
+.description-secondary {
+	color: #919191;
+	margin-left: 1.5rem;
+}
+
+
+/* Contact */
+#contactInfo {
+	list-style-type: none;
+	text-align: left;
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 16px;
+}
+
+
+/* VCN */
+
+
+/* Animation */
+.fade-in {
+	opacity: 0;
+	animation-name: fadeIn;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+
+/* Media Queries */
+/* large screen | desktop | 992px - 1199px */
+@media screen and ( min-width: 992px ) and ( max-width: 1199px ) {
+}
+
+/* medium screen | tablet | 768px - 991px */
+@media screen and ( min-width: 768px ) and ( max-width: 991px ) {
+}
+
+/* small screen | phone | 576px - 767px */
+@media screen and ( min-width: 576px ) and ( max-width: 767px ) {
+}
+
+/* extra small screen | phone | 0px - 575px */
+@media screen and ( max-width: 575px ) {
+	#root {
+		padding-bottom: 9rem;
+	}
+}
