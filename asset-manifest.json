@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/vsauiuc/static/css/main.3249d57d.chunk.css",
-    "main.js": "/vsauiuc/static/js/main.65c3570f.chunk.js",
-    "main.js.map": "/vsauiuc/static/js/main.65c3570f.chunk.js.map",
+    "main.css": "/vsauiuc/static/css/main.42f42939.chunk.css",
+    "main.js": "/vsauiuc/static/js/main.a7b7e001.chunk.js",
+    "main.js.map": "/vsauiuc/static/js/main.a7b7e001.chunk.js.map",
     "runtime-main.js": "/vsauiuc/static/js/runtime-main.2a716535.js",
     "runtime-main.js.map": "/vsauiuc/static/js/runtime-main.2a716535.js.map",
     "static/css/2.17e5ed98.chunk.css": "/vsauiuc/static/css/2.17e5ed98.chunk.css",
     "static/js/2.ccc56363.chunk.js": "/vsauiuc/static/js/2.ccc56363.chunk.js",
     "static/js/2.ccc56363.chunk.js.map": "/vsauiuc/static/js/2.ccc56363.chunk.js.map",
     "index.html": "/vsauiuc/index.html",
-    "precache-manifest.d95a2a2bec46a4477ee48e9b2b27c377.js": "/vsauiuc/precache-manifest.d95a2a2bec46a4477ee48e9b2b27c377.js",
+    "precache-manifest.923d022c228c4193794624c8abbd18b6.js": "/vsauiuc/precache-manifest.923d022c228c4193794624c8abbd18b6.js",
     "service-worker.js": "/vsauiuc/service-worker.js",
     "static/css/2.17e5ed98.chunk.css.map": "/vsauiuc/static/css/2.17e5ed98.chunk.css.map",
-    "static/css/main.3249d57d.chunk.css.map": "/vsauiuc/static/css/main.3249d57d.chunk.css.map",
+    "static/css/main.42f42939.chunk.css.map": "/vsauiuc/static/css/main.42f42939.chunk.css.map",
     "static/js/2.ccc56363.chunk.js.LICENSE": "/vsauiuc/static/js/2.ccc56363.chunk.js.LICENSE"
   },
   "entrypoints": [
     "static/js/runtime-main.2a716535.js",
     "static/css/2.17e5ed98.chunk.css",
     "static/js/2.ccc56363.chunk.js",
-    "static/css/main.3249d57d.chunk.css",
-    "static/js/main.65c3570f.chunk.js"
+    "static/css/main.42f42939.chunk.css",
+    "static/js/main.a7b7e001.chunk.js"
   ]
 }
