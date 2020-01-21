@@ -61,8 +61,8 @@ function About() {
 					<p className="mt-4 text-center text-lg-left">The <strong>Vietnamese Student Association</strong> at the <strong>University of Illinois at Urbana-Champaign</strong>, (hereon, &ldquo;VSA&rdquo;) was established at the University of Illinois in 1983. VSA is an organization dedicated to promoting cultural awareness through a variety of events on campus and in the Urbana-Champaign community. VSA strives to establish a supportive environment for those of Vietnamese and non-Vietnamese descent to interact and engage in activities that preserve and appreciate the Vietnamese culture and heritage. VSA is open to everyone that is interested in learning or sharing the Vietnamese culture.<br /><br />VSA shall organize events for the campus and community to promote knowledge of Vietnamese culture or Vietnamese American and Asian American awareness.<br /><br />VSA shall strengthen and support the greater Vietnamese American student community through active involvement with the Union of Vietnamese Student Associations of the Midwest (UVSA-Midwest) as well as other VSA&rsquo;s in the Union of North American Vietnamese Student Association (UNAVSA).<br /><br />VSA shall strengthen the campus Asian Pacific Islander American (hereon, &ldquo;APIA&rdquo;) Community and support other campus APIA organizations. If affiliated with the Asian Pacific American Coalition, (hereon, &ldquo;APAC&rdquo;) then VSA shall be active in supporting the APAC organization.</p>
 				</Col>
 				<Col tag="figure" lg={5}>
-					<img className="mt-2 w-100 rounded" src="/images/about_img_1.jpg" alt="About 1"/>
-					<img className="mt-4 w-100 rounded" src="/images/about_img_2.jpg" alt="About 2"/>
+					<img className="mt-2 w-100 rounded" src={`${process.env.PUBLIC_URL}/images/about_img_1.jpg`} alt="About 1"/>
+					<img className="mt-4 w-100 rounded" src={`${process.env.PUBLIC_URL}/images/about_img_2.jpg`} alt="About 2"/>
 				</Col>
 			</Row>
 
@@ -100,7 +100,7 @@ function About() {
 				<TabPane tabId="1">
 					<Row className="align-items-center">
 						<Col lg={7}>
-							<img className="w-100 rounded" src="/images/board_17_18.jpg" alt="Current Board" />
+							<img className="w-100 rounded" src={`${process.env.PUBLIC_URL}/images/board_17_18.jpg`} alt="Current Board" />
 						</Col>
 						<Col lg={5}>
 							<ul className="board-list">

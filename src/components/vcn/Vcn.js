@@ -4,27 +4,27 @@ import {Container, Row, Col, Carousel, CarouselItem, CarouselControl, CarouselIn
 function Vcn() {
 	const carouselItems = [
 		{
-			src: '/images/vcn_2017/group.jpg',
+			src: `${process.env.PUBLIC_URL}/images/vcn_2017/group.jpg`,
 			altText: 'Slide 1'
 		}, 
 		{
-			src: '/images/vcn_2017/coed.jpg',
+			src: `${process.env.PUBLIC_URL}/images/vcn_2017/coed.jpg`,
 			altText: 'Slide 2'
 		}, 
 		{
-			src: '/images/vcn_2017/skit.jpg',
+			src: `${process.env.PUBLIC_URL}/images/vcn_2017/skit.jpg`,
 			altText: 'Slide 3'
 		}, 
 		{
-			src: '/images/vcn_2017/siracha.jpg',
+			src: `${process.env.PUBLIC_URL}/images/vcn_2017/siracha.jpg`,
 			altText: 'Slide 4'
 		}, 
 		{
-			src: '/images/vcn_2017/lion.jpg',
+			src: `${process.env.PUBLIC_URL}/images/vcn_2017/lion.jpg`,
 			altText: 'Slide 5'
 		}, 
 		{
-			src: '/images/vcn_2017/ribbons.jpg',
+			src: `${process.env.PUBLIC_URL}/images/vcn_2017/ribbons.jpg`,
 			altText: 'Slide 6'
 		}
 	]

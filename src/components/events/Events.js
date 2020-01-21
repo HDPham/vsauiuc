@@ -16,7 +16,7 @@ function Events() {
 	const upcEvents = [
 		{
 			id: 1,
-			cover: '/images/event_pizza.jpg',
+			cover: `${process.env.PUBLIC_URL}/images/event_pizza.jpg`,
 			name: 'Pizza Party!',
 			location: 'That One Place',
 			locationSecondary: '123 Sesame Street',
@@ -32,7 +32,7 @@ function Events() {
 	const pastEvents = [
 		{
 			id: 1,
-			cover: '/images/event_scavenger.jpg',
+			cover: `${process.env.PUBLIC_URL}/images/event_scavenger.jpg`,
 			name: 'Scavenger Hunt!',
 			location: 'That Other Place',
 			locationSecondary: '221B Baker Street',
