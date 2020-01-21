@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4e5b18b38ddd0b3fa773e1cb3863e40c",
+    "revision": "997431f7dfa4bfd48bb8fc0e2b747f54",
     "url": "/vsauiuc/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/vsauiuc/static/css/2.17e5ed98.chunk.css"
   },
   {
-    "revision": "fa45e37e06163eb1ad26",
+    "revision": "8c4630c2f53ae9cfdc99",
     "url": "/vsauiuc/static/css/main.6d5abc30.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/vsauiuc/static/js/2.ccc56363.chunk.js.LICENSE"
   },
   {
-    "revision": "fa45e37e06163eb1ad26",
-    "url": "/vsauiuc/static/js/main.3521fa21.chunk.js"
+    "revision": "8c4630c2f53ae9cfdc99",
+    "url": "/vsauiuc/static/js/main.af391845.chunk.js"
   },
   {
     "revision": "547aceacae1283aba2a7",
