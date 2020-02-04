@@ -1,24 +1,13 @@
 import React from 'react';
-import {Container, Row, Col, Form, FormGroup, Label, Input, FormText, Button} from 'reactstrap';
+import { Container, Row, Col, Form, FormGroup, Label, Input, FormText, Button } from 'reactstrap';
 
 function Contact() {
-
-	const onSubmit = e => {
-		e.preventDefault();
-		// const mail = {
-		// 	firstName: document.getElementById('contactFirstName').value,
-		// 	lastName: document.getElementById('contactLastName').value,
-		// 	email: document.getElementById('contactEmail').value,
-		// 	message: document.getElementById('contactMessage').value
-		// }
-	};
-
 	return (
-		<Container tag="main" role="main" className="mt-5 fade-in">
-			<Row className="justify-content-around align-items-center">
+		<Container tag="main" role="main" id="contact" className="mt-0 mt-lg-5 fade-in">
+			<Row tag="section" className="justify-content-around align-items-center">	
 				<Col lg={6} className="mt-4">
-					<Form onSubmit={onSubmit}>
-						<h1 className="text-maroon">Contact Us</h1>
+					<h2 className="text-center text-lg-left display-4 text-maroon">Contact Us</h2>
+					<Form>
 						<Row form>
 							<Col xs={6}>
 								<FormGroup>
@@ -43,11 +32,11 @@ function Contact() {
 							<Input type="textarea" name="message" id="contactMessage" className="form-control" rows="3" required />
 						</FormGroup>
 						<Button className="text-white bg-maroon" disabled>Submit</Button>
-						<FormText color="muted">For presentational purposes only. Thus, form is disabled.</FormText>
+						<FormText color="muted">Form is disabled. For presentational purposes only.</FormText>
 					</Form>
 				</Col>
-				<Col lg={4} className="mt-4">
-					<ul id="contactInfo" className="pl-0">
+				<Col lg={4} className="mt-5">
+					<ul id="contactInfo" className="pl-0 font-weight-bold">
 						<li>Email<br />
 							<span className="text-maroon">vsauiuc.pr@gmail.com</span>
 						</li><br />
