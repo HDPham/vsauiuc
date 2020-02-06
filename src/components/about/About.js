@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Nav, NavItem, NavLink, TabContent, TabPane } from 'reactstrap';
-import boardList from '../../Board';
+import boardList from './Board';
 import classNames from 'classnames';
+import aboutImg1 from './about_img_1.jpg';
+import aboutImg2 from './about_img_2.jpg';
 
 function About() {
 	const [activeTab, setActiveTab] = useState(1);
@@ -21,8 +23,8 @@ function About() {
 					<p className="mt-4 text-center text-lg-left">The <b>Vietnamese Student Association</b> at the <b>University of Illinois at Urbana-Champaign</b>, (hereon, &ldquo;VSA&rdquo;) was established at the University of Illinois in 1983. VSA is an organization dedicated to promoting cultural awareness through a variety of events on campus and in the Urbana-Champaign community. VSA strives to establish a supportive environment for those of Vietnamese and non-Vietnamese descent to interact and engage in activities that preserve and appreciate the Vietnamese culture and heritage. VSA is open to everyone that is interested in learning or sharing the Vietnamese culture.<br /><br />VSA shall organize events for the campus and community to promote knowledge of Vietnamese culture or Vietnamese American and Asian American awareness.<br /><br />VSA shall strengthen and support the greater Vietnamese American student community through active involvement with the Union of Vietnamese Student Associations of the Midwest (UVSA-Midwest) as well as other VSA&rsquo;s in the Union of North American Vietnamese Student Association (UNAVSA).<br /><br />VSA shall strengthen the campus Asian Pacific Islander American (hereon, &ldquo;APIA&rdquo;) Community and support other campus APIA organizations. If affiliated with the Asian Pacific American Coalition, (hereon, &ldquo;APAC&rdquo;) then VSA shall be active in supporting the APAC organization.</p>
 				</Col>
 				<Col tag="figure" lg={4}>
-					<img className="mt-2 w-100 rounded" src={`${process.env.PUBLIC_URL}/images/about_img_1.jpg`} alt="About 1"/>
-					<img className="mt-4 w-100 rounded" src={`${process.env.PUBLIC_URL}/images/about_img_2.jpg`} alt="About 2"/>
+					<img className="mt-2 w-100 rounded" src={aboutImg1} alt="About 1"/>
+					<img className="mt-4 w-100 rounded" src={aboutImg2} alt="About 2"/>
 				</Col>
 			</Row>
 
@@ -44,10 +46,10 @@ function About() {
 						{boardList.map(board => 
 						<TabPane tabId={board.id} key={board.id}>
 							<Row className="justify-content-center align-items-center">
-								{board.img.name ?
+								{board.img.src ?
 								<>
 									<Col tag="figure" lg={7}>
-										<img className="w-100 rounded" src={`${process.env.PUBLIC_URL}/images/${board.img.name}`} alt={board.img.altText} />
+										<img className="w-100 rounded" src={board.img.src} alt={board.img.altText} />
 									</Col>
 									<Col lg={5}>
 										<ul className="board-members">

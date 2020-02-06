@@ -12,10 +12,17 @@ $maroon: rgb(176, 0, 0);
 	#events > ul > li {
 		width: 75%;
 	}
+
+	#vcn {
+        padding-bottom: 9rem;
+    }
 }
 
 /* small screen | phone | 576px - 767px */
 @media (min-width: 576px) {
+	#vcn {
+        padding-bottom: 4rem;
+    }
 }
 
 /* medium screen | tablet | 768px - 991px */
@@ -122,8 +129,12 @@ nav {
 
 
 /* Home */
-#home > section {
-	background-color: rgba(40,40,40, 0.7);
+#home {
+	background: url("./components/home/front_page.jpg") center/cover;
+
+	> section {
+		background-color: rgba(40,40,40, 0.7);
+	}
 }
 
 

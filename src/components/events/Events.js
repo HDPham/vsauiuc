@@ -3,6 +3,8 @@ import { Container, Nav, NavItem, NavLink, TabContent, TabPane } from 'reactstra
 import Calendar from './Calendar';
 import List from './List';
 import classNames from 'classnames';
+import eventPizza from './event_pizza.jpg';
+import eventScavenger from './event_scavenger.jpg';
 
 function Events() {
 	const [activeTab, setActiveTab] = useState('1');
@@ -11,7 +13,7 @@ function Events() {
 	const upcEvents = [
 		{
 			id: 1,
-			imgName: 'event_pizza.jpg',
+			img: eventPizza,
 			name: 'Pizza Party!',
 			location: 'That One Place',
 			locationSecondary: '123 Sesame Street',
@@ -35,7 +37,7 @@ function Events() {
 	const pastEvents = [
 		{
 			id: 1,
-			imgName: 'event_scavenger.jpg',
+			img: eventScavenger,
 			name: 'Scavenger Hunt!',
 			location: 'That Other Place',
 			locationSecondary: '221B Baker Street',

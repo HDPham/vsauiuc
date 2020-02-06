@@ -1,36 +1,42 @@
 import React, { useState } from 'react';
 import { Carousel as CarouselRS, CarouselItem, CarouselControl, CarouselIndicators } from 'reactstrap';
+import groupImg from './vcn_2017/group.jpg';
+import coedImg from './vcn_2017/coed.jpg';
+import skitImg from './vcn_2017/skit.jpg';
+import sirachaImg from './vcn_2017/siracha.jpg';
+import lionImg from './vcn_2017/lion.jpg';
+import ribbonsImg from './vcn_2017/ribbons.jpg';
 
 function Carousel() {
 	const carouselItems = [
 		{
 			id: 1,
-			name: 'group.jpg',
+			src: groupImg,
 			altText: 'VCN Group'
 		}, 
 		{
 			id: 2,
-			name: 'coed.jpg',
+			src: coedImg,
 			altText: 'VCN Coed'
 		}, 
 		{
 			id: 3,
-			name: 'skit.jpg',
+			src: skitImg,
 			altText: 'VCN Skit'
 		}, 
 		{
 			id: 4,
-			name: 'siracha.jpg',
+			src: sirachaImg,
 			altText: 'VCN Siracha Boys'
 		}, 
 		{
 			id: 5,
-			name: 'lion.jpg',
+			src: lionImg,
 			altText: 'VCN Lion Dance'
 		}, 
 		{
 			id: 6,
-			name: 'ribbons.jpg',
+			src: ribbonsImg,
 			altText: 'VCN Ribbons'
 		}
 	];
@@ -58,7 +64,7 @@ function Carousel() {
 	const slides = carouselItems.map((img) => {
 		return (
 			<CarouselItem onExiting={() => setAnimating(true)} onExited={() => setAnimating(false)} key={img.id}>
-				<img src={`${process.env.PUBLIC_URL}/images/vcn_2017/${img.name}`} alt={img.altText} className="w-100" style={{minHeight: '40vh', maxHeight: '80vh'}} />
+				<img src={img.src} alt={img.altText} className="w-100" style={{minHeight: '40vh', maxHeight: '80vh'}} />
 			</CarouselItem>
 		);
 	});

@@ -16,7 +16,7 @@ function List(props) {
 							{event.day}
 						</div>
 					</div>
-					<img src={`${process.env.PUBLIC_URL}/images/${event.imgName}`} alt={event.name} className="mw-100 rounded"></img>
+					<img src={event.img} alt={event.name} className="w-100 h-100 rounded"></img>
 				</Col>
 				<Col xs={12} md={7} className="mt-4 mt-md-0 event-info">
 					<h3 className="text-center text-md-left">{event.name}</h3>

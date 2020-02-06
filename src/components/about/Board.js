@@ -1,9 +1,11 @@
+import boardImg1718 from './board_17-18.jpg';
+
 const boardList = [
     {
         id: 1,
         yearRange: 'Current',
         img: {
-            name: 'board_17-18.jpg',
+            src: boardImg1718,
             altText: 'Board 17-18'
         },
         boardMembers: [
@@ -53,7 +55,7 @@ const boardList = [
         id: 2,
         yearRange: '2016-17',
         img: {
-            name: '',
+            src: '',
             altText: 'Board 16-17'
         },
         boardMembers: [
@@ -103,7 +105,7 @@ const boardList = [
         id: 3,
         yearRange: '2015-16',
         img: {
-            name: '',
+            src: '',
             altText: 'Board 15-16'
         },
         boardMembers: [
@@ -145,7 +147,7 @@ const boardList = [
         id: 4,
         yearRange: '2014-15',
         img: {
-            name: '',
+            src: '',
             altText: 'Board 14-15'
         },
         boardMembers: [
@@ -187,7 +189,7 @@ const boardList = [
         id: 5,
         yearRange: '2013-14',
         img: {
-            name: '',
+            src: '',
             altText: 'Board 13-14'
         },
         boardMembers: [
@@ -233,7 +235,7 @@ const boardList = [
         id: 6,
         yearRange: '2012-13',
         img: {
-            name: '',
+            src: '',
             altText: 'Board 12-13'
         },
         boardMembers: [
@@ -279,7 +281,7 @@ const boardList = [
         id: 7,
         yearRange: '2011-12',
         img: {
-            name: '',
+            src: '',
             altText: 'Board 11-12'
         },
         boardMembers: [
@@ -321,7 +323,7 @@ const boardList = [
         id: 8,
         yearRange: '2010-11',
         img: {
-            name: '',
+            src: '',
             altText: 'Board 10-11'
         },
         boardMembers: [
@@ -363,7 +365,7 @@ const boardList = [
         id: 9,
         yearRange: '2009-10',
         img: {
-            name: '',
+            src: '',
             altText: 'Board 09-10'
         },
         boardMembers: [

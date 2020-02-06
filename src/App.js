@@ -10,6 +10,7 @@ import Vcn from './components/vcn/Vcn';
 import Contact from './components/contact/Contact';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.scss';
+import logo from './logo_64x64.png';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faMap, faLocationArrow, faCalendarAlt, faClock, faUserCircle } from '@fortawesome/free-solid-svg-icons';
 
@@ -21,7 +22,7 @@ function App() {
 			<header>
 				<h1 className="fade-in">
 					<NavbarBrand tag={Link} to="/">
-						<img src={`${process.env.PUBLIC_URL}/images/logo_2017-2018.png`} alt="UIUC VSA Logo" /> <span className="align-middle text-white font-weight-bold">VSA UIUC</span>
+						<img src={logo} alt="UIUC VSA Logo" /> <span className="align-middle text-white font-weight-bold">VSA UIUC</span>
 					</NavbarBrand>
 				</h1>
 				<Route render={(props) => <Nav pathname={props.location.pathname}></Nav>} />
