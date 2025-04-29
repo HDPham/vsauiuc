@@ -1,28 +1,27 @@
 /* Variables */
 $maroon: rgb(176, 0, 0);
 
-
 /* Media Queries */
 /* extra small screen | phone | 0px - 575px */
 @media (max-width: 575px) {
-	#home > section > h2 {
-		font-size: 3.5rem;
-	}
+  .banner__title {
+    font-size: 3.5rem;
+  }
 
-	#events > ul > li {
-		width: 75%;
-	}
+  #events > ul > li {
+    width: 75%;
+  }
 
-	#vcn {
-        padding-bottom: 9rem;
-    }
+  #vcn {
+    padding-bottom: 9rem;
+  }
 }
 
 /* small screen | phone | 576px - 767px */
 @media (min-width: 576px) {
-	#vcn {
-        padding-bottom: 4rem;
-    }
+  #vcn {
+    padding-bottom: 4rem;
+  }
 }
 
 /* medium screen | tablet | 768px - 991px */
@@ -37,148 +36,150 @@ $maroon: rgb(176, 0, 0);
 @media (min-width: 1200px) {
 }
 
-
 /* Keyframes */
 @keyframes fadein {
-	from {opacity: 0;}
-	to {opacity: 1;}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
-
 
 /* Global */
 .text-maroon {
-	color: $maroon;
+  color: $maroon;
 }
 
 a.text-maroon:hover {
-	color: rgb(144, 0, 0);
+  color: rgb(144, 0, 0);
 }
 
 .fade-in {
-	opacity: 0;
-	animation: fadein 1s forwards;
+  opacity: 0;
+  animation: fadein 1s forwards;
 }
 
 .bg-maroon {
-	background-color: $maroon;
+  background-color: $maroon;
 }
 
 button.bg-maroon:hover {
-	background-color: rgb(144, 0, 0);
+  background-color: rgb(144, 0, 0);
 }
-
 
 /* Root */
 #root {
-	position: relative;
-	min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
-
 
 /* Tabs */
 ul.nav.nav-tabs {
-	a {
-		color: #A9A9A9;
-		cursor: pointer;
+  a {
+    color: #a9a9a9;
+    cursor: pointer;
 
-		&.active {
-			font-weight: bold;
-		}
-	}
+    &.active {
+      font-weight: bold;
+    }
+  }
 }
-
 
 /* Header */
-header > h1 {
-	position: fixed;
-	left: 1rem;
-	z-index: 1031;
-	font-size: medium;
+header > a {
+  font-size: medium;
 
-	> a  > img {
-		height: 2rem;
-	}
+  > img {
+    height: 2rem;
+  }
 }
-
 
 /* Nav */
 nav {
-	transition: 1s;
+  transition: 1s;
 
-	img {
-		height: 2rem;
-	}
+  img {
+    height: 2rem;
+  }
 
-	ul li {
-		padding-left: 5px;
+  ul li {
+    margin-left: 5px;
+    a {
+      border-radius: 5px;
+      border: 3px solid transparent;
+    }
 
-		a {
-			border-radius: 5px;
-			border: 3px solid transparent;
-		}
+    a.active {
+      border: 3px solid #777777;
+    }
 
-		a.active {
-			border: 3px solid #777777;
-		}
-
-		a:hover {
-			border: 3px solid #777777;
-		}
-	}
+    a:hover {
+      border: 3px solid #777777;
+    }
+  }
 }
 
+.nav__link {
+  border-radius: 5px;
+  border: 3px solid transparent;
+}
 
 /* Home */
-#home {
-	background: url("./components/home/front_page.jpg") center/cover;
-
-	> section {
-		background-color: rgba(40,40,40, 0.7);
-	}
+.home {
+  background: url('/front_page.jpg') center/cover;
 }
 
+.banner {
+  background-color: rgba(40, 40, 40, 0.7);
+}
 
 /* About */
 #about .board-members {
-	list-style-type: none;
-	margin-top: 1rem;
-	padding: 0;
-	text-align: center;
-	font-size: 1.25rem;
-	font-weight: bold;
+  list-style-type: none;
+  margin-top: 1rem;
+  padding: 0;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: bold;
 }
-
-
-/* Events */
-#events {
-	.event-date {
-		position: absolute;
-		left: 7.5%;
-		top: -5%;
-		width: 3.5rem;
-
-		.event-month {
-			background: #696969;
-			height: 1.5rem;
-			line-height: 1.5rem;
-		}
-
-		.event-day {
-			background: #f4b35b;
-			height: 2.5rem;
-			line-height: 2.5rem;
-			font-size: 2rem;
-		}
-	}
-
-	.event-info span {
-		margin-left: 0.5rem;
-	}
-}
-
 
 /* Contact */
 #contact ul {
-	list-style-type: none;
-	font-size: 1.25rem;
+  list-style-type: none;
+  font-size: 1.25rem;
+}
+
+/* Events */
+#events {
+  .event-date {
+    position: absolute;
+    left: 7.5%;
+    top: -5%;
+    width: 3.5rem;
+
+    .event-month {
+      background: #696969;
+      height: 1.5rem;
+      line-height: 1.5rem;
+    }
+
+    .event-day {
+      background: #f4b35b;
+      height: 2.5rem;
+      line-height: 2.5rem;
+      font-size: 2rem;
+    }
+  }
+
+  .event-info span {
+    margin-left: 0.5rem;
+  }
+}
+
+/* VCN */
+.carousel__image {
+  min-height: '50vh';
+  max-height: '75vh';
 }
